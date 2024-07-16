@@ -1,0 +1,31 @@
+﻿@model List<CobbleStoneWebAPI.Models.User>
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<h1>Load Users</h1>
+
+<form asp-action="LoadUsers" method="get">
+    <button type="submit" class="btn btn-primary">Load Users</button>
+</form>
+
+@* <table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Name</td>
+                <td>@user.Email</td>
+                <td>@user.Phone</td>
+            </tr>
+        }
+    </tbody>
+</table> *@

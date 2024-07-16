@@ -1,0 +1,27 @@
+@model List<CobbleStoneWebAPI.Models.User>
+
+@{
+    ViewData["Title"] = "Users";
+}
+
+<h1>User List</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Name</td>
+                <td>@user.Email</td>
+                <td>@user.Phone</td>
+            </tr>
+        }
+    </tbody>
+</table>
